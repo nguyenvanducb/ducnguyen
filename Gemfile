@@ -1,36 +1,34 @@
-source "https://rubygems.or "
-
-gem "rail ", "5.0.0. "
-gem "pum ", "3.4. "
-gem "sass-rail ", "5.0. "
-gem "uglifie ", "3.0. "
-gem "coffee-rail ", "4.2. "
-gem "jquery-rail ", "4.1. "
-gem "turbolink ", "5.0. "
-gem "jbuilde ",  "2.4. "
+source "https://rubygems.org"
+gem "rails", "5.0.0.1"
+gem "bootstrap-sass", "3.3.7"
+gem "puma", "3.6.0"
+gem "sass-rails",   "5.0.6"
+gem "uglifier", "3.0.2"
+gem "coffee-rails", "4.2.1"
+gem "jquery-rails", "4.2.1"
+gem "turbolinks",   "5.0.1"
+gem "jbuilder", "2.6.0"
 
 group :development, :test do
-  gem "sqlite ", "1.3.1 "
-  gem "byebu ",  "9.0. ", platform: :mri
+  gem "sqlite3", "1.3.11"
+  gem "byebug",  "9.0.0", platform: :mri
 end
 
 group :development do
-  gem "web-consol ", "3.1. "
-  gem "liste ", "3.0. "
-  gem "sprin ", "1.7. "
-  gem "spring-watcher-liste ", "2.0. "
+  gem "web-console", "3.3.1"
+
+  gem "spring", "2.0.0"
+ 
 end
 
 group :test do
-  gem "rails-controller-testin ", "0.1. "
-  gem "minitest-reporter ",  "1.1. "
-  gem "guar ", "2.13. "
-  gem "guard-minites ", "2.4. "
+  gem "minitest-reporters",       "1.1.11"
+  gem "guard-minitest",           "2.4.6"
 end
 
 group :production do
-  gem "p ", "0.18. "
+  gem "pg", "0.18.4"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-dat ", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
